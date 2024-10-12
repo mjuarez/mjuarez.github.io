@@ -1,13 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
+	<title>countdown</title>
 </head>
 <body>
-    <h1>Countdown to the 24th</h1>
-    <div id="countdown"></div>
-    <script src="countdown.js"></script>
+
+	<div>
+		<h1 id="counter"></h1>
+		<div id="timespan"></div>
+	</div>
+
+	<script src="countdown.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        (function () {
+        function update() {
+            var ts = countdown(null, new Date(2024, 9, 24, 4, 0, 0, 0));
+            var counter = document.getElementById("counter");
+            counter.innerHTML = ts.toHTML("strong");
+            requestAnimationFrame(update, timespan.parentNode);
+        }
+        update();
+        })();
+    </script>
+
 </body>
 </html>
