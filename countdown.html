@@ -1,16 +1,26 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title>countdown</title>
+    <title>countdown</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-	<div>
-		<h1 id="counter"></h1>
-		<div id="timespan"></div>
-	</div>
+    <div>
+        <h1 id="counter"></h1>
+        <h3>until launch</h3>
+        <div id="timespan"></div>
+    </div>
 
-	<script src="countdown.min.js" type="text/javascript"></script>
-	<script type="text/javascript">
+    <script src="countdown.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
         (function () {
         function update() {
             var ts = countdown(null, new Date(2024, 9, 24, 4, 0, 0, 0));
