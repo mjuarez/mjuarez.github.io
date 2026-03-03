@@ -13,10 +13,10 @@
       --bg-card:   #16161f;
       --bg-card2:  #1c1c28;
       --border:    #2a2a3a;
-      --accent1:   #6d4aff;
-      --accent2:   #9b6dff;
-      --accent3:   #c084fc;
-      --text:      #e8e8f0;
+      --accent1:   #0f62fe;
+      --accent2:   #4589ff;
+      --accent3:   #78a9ff;
+      --text:      #a6c8ff;
       --text-muted:#9898b0;
       --radius:    12px;
       --transition:0.25s ease;
@@ -70,16 +70,16 @@
       display: flex; align-items: center;
       padding-top: 64px;
       background:
-        radial-gradient(ellipse 70% 50% at 60% 40%, rgba(109,74,255,0.18) 0%, transparent 70%),
-        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(155,109,255,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 70% 50% at 60% 40%, rgba(15,98,254,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(0,157,154,0.12) 0%, transparent 60%),
         var(--bg);
     }
     .hero-content { max-width: 680px; }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 6px 14px; border-radius: 20px;
-      border: 1px solid rgba(109,74,255,0.4);
-      background: rgba(109,74,255,0.1);
+      border: 1px solid rgba(15,98,254,0.4);
+      background: rgba(15,98,254,0.1);
       font-size: 0.8rem; color: var(--accent3); font-weight: 500;
       margin-bottom: 28px;
     }
@@ -341,47 +341,47 @@
   <div class="divider"></div>
 
 <!-- Services -->
-<section id="services">
+<section id="services" class="projects-bg">
   <div class="container">
     <span class="section-label">Services</span>
-    <h2 class="section-title">Cloud &amp; Development Stack</h2>
+    <h2 class="section-title">Specialties Offered</h2>
     <p class="section-sub">
       End-to-end experience across the modern cloud-native toolchain — from
       infrastructure provisioning to application delivery.
     </p>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-icon">☁️</div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-icon">🚀</div>
         <h3>Production and Launch Readiness Assessment</h3>
         <p>Having worked extensively on high profile launches in the past, I can assist with performing production or launch
         readiness reviews. I can help review your architecture, identify potential single points of failure and bottlenecks that
         can impact your go-live date. I work closely with your engineering and product teams to develop dashboards, develop
         contingency plans and action plans to support autoscaling helping you gain confidence in a successful launch.</p>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">🐳</div>
+      <div class="project-card">
+        <div class="project-icon">🚚</div>
         <h3>Cloud Repatriation</h3>
         <p>Need to move workloads off cloud and on-premise? Building out dense on-premise compute to support AI workloads? Through
         planning a build out to hardware deployment to migrating your workloads, I can help you apply the best mix of
         cloud-native principles with on-premise operational approaches to help with a cost effective strategy on maintaining
         your own infrastructure.</p>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">🏗️</div>
+      <div class="project-card">
+        <div class="project-icon">🔄</div>
         <h3>CICD Pipeline Design and Implementation</h3>
         <p>From simple frontend web applications to embedded firmware with physical test benches, I can help design and implement
         automations and workflows that accelerate your team’s time to market. I’ll work closely with your product, engineering
         and quality teams to develop a foundational process you can evolve and grow from.</p>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">🔄</div>
+      <div class="project-card">
+        <div class="project-icon">🏗️</div>
         <h3>Infrastructure-as-Code Migrations and Standardization</h3>
         <p>Looking to import your existing world into infrastructure-as-code? Are your Terraform pipelines slowing down your team’s
         velocity? Migrating between different IaC providers? I can help formulate a plan to quickly onboard your infrastructure
         and team to leverage these tools while integrating your change management process.</p>
       </div>
-      <div class="skill-card">
-        <div class="skill-icon">📊</div>
+      <div class="project-card">
+        <div class="project-icon">📊</div>
         <h3>Observability and Monitoring Strategy</h3>
         <p>Blind spots? Logging overages? Need traceability? I can help design and implement comprehensive observability and monitoring strategies to ensure your systems are reliable, performant, and maintainable.</p>
       </div>
@@ -492,7 +492,10 @@
             </div>
           </div>
           <h3>Multi-Region Kubernetes Platform</h3>
-          <p>Designed and deployed a highly available Kubernetes platform spanning three AWS regions, with automated failover, GitOps-driven deployments, and full observability stack.</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
           <div class="project-stack">
             <span class="tag">EKS</span>
             <span class="tag">Terraform</span>
@@ -508,7 +511,10 @@
             </div>
           </div>
           <h3>Zero-Trust Network Migration</h3>
-          <p>Led the migration of legacy VPN-based access to a zero-trust network architecture, reducing attack surface and improving developer experience for remote teams.</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           <div class="project-stack">
             <span class="tag">Cloudflare Access</span>
             <span class="tag">Terraform</span>
@@ -523,7 +529,10 @@
             </div>
           </div>
           <h3>Internal Developer Platform</h3>
-          <p>Built a self-service platform enabling engineering teams to provision environments, deploy services, and access tooling without requiring infrastructure team involvement.</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
           <div class="project-stack">
             <span class="tag">Python</span>
             <span class="tag">Go</span>
@@ -539,7 +548,10 @@
             </div>
           </div>
           <h3>Cloud Cost Optimisation</h3>
-          <p>Implemented automated rightsizing, reserved instance management, and cost anomaly detection — achieving a 40% reduction in monthly cloud spend without impacting availability.</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
           <div class="project-stack">
             <span class="tag">AWS Cost Explorer</span>
             <span class="tag">Python</span>
@@ -554,7 +566,10 @@
             </div>
           </div>
           <h3>Secrets Management Overhaul</h3>
-          <p>Replaced hard-coded credentials across 60+ services with dynamic secrets using HashiCorp Vault and AWS Secrets Manager, fully integrated into the CI/CD pipeline.</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
           <div class="project-stack">
             <span class="tag">Vault</span>
             <span class="tag">AWS Secrets Manager</span>
@@ -569,7 +584,10 @@
             </div>
           </div>
           <h3>Disaster Recovery Automation</h3>
-          <p>Automated RPO/RTO-driven disaster recovery runbooks, enabling full environment restoration in under 15 minutes with continuous DR testing built into the release process.</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
           <div class="project-stack">
             <span class="tag">Terraform</span>
             <span class="tag">AWS Backup</span>
